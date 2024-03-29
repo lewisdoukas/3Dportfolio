@@ -1,7 +1,6 @@
 import React, { Fragment, useRef, useState } from "react";
 
 import { Dialog, Transition } from "@headlessui/react";
-import { ExclamationTriangleIcon } from "@heroicons/react/24/outline";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
