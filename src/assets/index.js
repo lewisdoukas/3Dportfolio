@@ -9,6 +9,8 @@ import report from "./report.png";
 import stop from "./stop.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import telegram from "./telegram.png";
+import twitter from "./twitter.png";
 
 import python from "./tech/python.png";
 import javascript from "./tech/javascript.png";
@@ -100,4 +102,6 @@ export {
   yaxul,
   report,
   stop,
+  telegram,
+  twitter,
 };

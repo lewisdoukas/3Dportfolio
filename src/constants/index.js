@@ -18,19 +18,14 @@ import {
   spv,
   adte,
   gys,
-  fiverr,
   emp,
-  blackjack,
   dksolver,
   dksurvey,
   geofinder,
   gps2radio,
-  gps2radioDesktop,
   gravSolver,
-  leaderboard,
   liquidity,
   moransi,
-  mosxato,
   satellitePosition,
   strBot,
   teleBot,
@@ -39,7 +34,6 @@ import {
   github,
   report,
   stop,
-  git,
 } from "../assets";
 
 export const navLinks = [
@@ -175,7 +169,7 @@ const experiences = [
       Geomagnetic and Gravity measurements across Greece's mainland and islands.",
       "Officer of HMGS Geodatabase department (Jul 2021 - Jan 2023).",
       "Working on several GIS projects using ArcGIS technologies.",
-      "Software & Web developer, creating & maintaining several data analysis & spatial tools (Python), WebGIS applications (ArcGIS JS API, OpenLayers, Leaflet) and mobile applications (Cordova, Flutter).",
+      "Software & Web developer, creating & maintaining several data analysis & spatial tools (Python), WebGIS applications (ArcGIS JS API, OpenLayers, Leaflet) and mobile applications (React-native, Cordova).",
     ],
   },
   {
@@ -188,71 +182,26 @@ const experiences = [
       "Studying to obtain an Integrated Master degree at School of Rural, Surveying and Geoinformatics Engineering.",
     ],
   },
-  // {
-  //   title: "Freelancer Developer",
-  //   company_name: "Fiverr",
-  //   icon: fiverr,
-  //   iconBg: "#E6DEDD",
-  //   date: "Feb 2023 - Present",
-  //   points: [
-  //     "Developing applications related to finance, trading and crypto currencies.",
-  //     "Creating automations for trading using TradingView Webhooks, Telegram posts and other social platforms.",
-  //     "Automate trading using several strategies, indicators, technical analysis tools and APIs.",
-  //     "Creating web applications related to crypto currency trading & TradingView Webhooks routing to crypto exchanges using APIs.",
-  //     "Completing over 100 orders, satisfying over 50 unique clients and having over 100 5⭐️ reviews.",
-  //     "Check out my profile",
-  //   ],
-  // },
-];
-
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
 ];
 
 const projects = [
   {
     name: "BreadBytes - Yaxul.com",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web-based platform that allows users to translate a TradingView signal into an order on several crypto exchanges like Binance, Bybit, BingX, Bitget and Phemex. \
+      Users can track live performance of opened positions, order history with PnL, generate performance cards and send them to a Discord server.",
     tags: [
       {
         name: "python",
         color: "yellow-blue-text-gradient",
       },
       {
-        name: "pandas",
-        color: "orange-text-gradient",
+        name: "flask",
+        color: "text-[#bdcacb]",
       },
       {
-        name: "numpy",
-        color: "yellow-text-gradient",
-      },
-      {
-        name: "leaflet",
-        color: "green-yellow-text-gradient",
+        name: "tailwindcss",
+        color: "text-[#38bdf8]",
       },
     ],
     image: yaxul,
@@ -262,7 +211,9 @@ const projects = [
   {
     name: "dkSolver",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Desktop application which allows users to adjust a free-air gravity anomaly network using linear regression techniques. \
+      It implements hypothesis testing using F-test, exports relevant tables & reports and generates a web-map showing the location\
+      and adjusted values of network's stations.",
     tags: [
       {
         name: "python",
@@ -289,19 +240,20 @@ const projects = [
   {
     name: "GeoFinder",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Mobile application that enables users to enter coordinates of a point and determines if it belongs to Greece territory, calculating the minimum distance from the borderline.\
+      It provides measurement & projection tools to transform coordinates to supported CRS (WGS84, GGRS87, ED50, MGRS).",
     tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
+        name: "react-native",
+        color: "pink-text-gradient",
       },
       {
-        name: "restapi",
+        name: "openlayers",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
-        color: "pink-text-gradient",
+        name: "css",
+        color: "text-[#4a7dda]",
       },
     ],
     image: geofinder,
@@ -311,19 +263,20 @@ const projects = [
   {
     name: "dkSurvey",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Desktop application which provides tools related to land surveying and allows engineers to process measurement data,\
+      such as network adjustment, coordinate projection, traverse, set out and several geodetic and AutoCAD related tools.",
     tags: [
       {
-        name: "nextjs",
-        color: "blue-text-gradient",
+        name: "python",
+        color: "yellow-blue-text-gradient",
       },
       {
-        name: "supabase",
-        color: "green-text-gradient",
+        name: "pandas",
+        color: "orange-text-gradient",
       },
       {
-        name: "css",
-        color: "pink-text-gradient",
+        name: "numpy",
+        color: "yellow-text-gradient",
       },
     ],
     image: dksurvey,
@@ -331,43 +284,47 @@ const projects = [
     link_image: stop,
   },
   {
-    name: "Telegram-Binance Bot",
+    name: "GPS2Radio",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Mobile application which enables users to share their current location through a radio network. It uses device's GPS and it can operate offline.\
+      It provides measurement and projection tools for supported CRS (WGS84, GGRS87, ED50, MGRS) and generates reports.",
     tags: [
       {
-        name: "nextjs",
-        color: "blue-text-gradient",
+        name: "cordova",
+        color: "text-[#a525f9]",
       },
       {
-        name: "supabase",
+        name: "openlayers",
         color: "green-text-gradient",
       },
       {
         name: "css",
-        color: "pink-text-gradient",
+        color: "text-[#4a7dda]",
       },
     ],
-    image: teleBot,
-    source_code_link: "",
-    link_image: stop,
+    image: gps2radio,
+    source_code_link:
+      "https://1drv.ms/b/s!Ai6BWKJYs6FV1k9FZQ3Z88S-XopQ?e=YF2Ua8",
+    link_image: report,
   },
+
   {
     name: "Moran's I",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A scientific application which calculates the spatial autocorrelation index - Moran's I for a given shapefile. It detects outliers,\
+      implements hypothesis testing using permutations and generates relevant graphs and reports.",
     tags: [
       {
-        name: "nextjs",
-        color: "blue-text-gradient",
+        name: "python",
+        color: "yellow-blue-text-gradient",
       },
       {
-        name: "supabase",
-        color: "green-text-gradient",
+        name: "pandas",
+        color: "orange-text-gradient",
       },
       {
-        name: "css",
-        color: "pink-text-gradient",
+        name: "numpy",
+        color: "yellow-text-gradient",
       },
     ],
     image: moransi,
@@ -376,44 +333,45 @@ const projects = [
     link_image: report,
   },
   {
-    name: "GPS2Radio",
+    name: "Telegram-Binance Bot",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Desktop application which enables users to translate incoming trading signals from a telegram chat into actual orders.\
+      Upon a given trading signal it places an order with stop loss & take profit to Binance exchange using APIs.",
     tags: [
       {
-        name: "nextjs",
-        color: "blue-text-gradient",
+        name: "python",
+        color: "yellow-blue-text-gradient",
       },
       {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
+        name: "binance-api",
+        color: "text-[#f1cc0c]",
       },
     ],
-    image: gps2radio,
-    source_code_link:
-      "https://1drv.ms/b/s!Ai6BWKJYs6FV1k9FZQ3Z88S-XopQ?e=YF2Ua8",
-    link_image: report,
+    image: teleBot,
+    source_code_link: "",
+    link_image: stop,
   },
   {
     name: "LiquidityBreaks",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "This is a technical indicator in python, originally written in TradingView's PineScript language. The indicator generates entry signals based on liquidity breaks\
+      of a given OHLCV data series using pivots & volume analysis.",
     tags: [
       {
-        name: "nextjs",
-        color: "blue-text-gradient",
+        name: "python",
+        color: "yellow-blue-text-gradient",
       },
       {
-        name: "supabase",
-        color: "green-text-gradient",
+        name: "pandas",
+        color: "orange-text-gradient",
       },
       {
-        name: "css",
-        color: "pink-text-gradient",
+        name: "numpy",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "ta-lib",
+        color: "text-[#84f10c]",
       },
     ],
     image: liquidity,
@@ -423,19 +381,25 @@ const projects = [
   {
     name: "Trading Bot",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Desktop application which allows users to connect with a crypto exchange using APIs and \
+      automate trading procedures based on conditions implied by an underlying trading strategy.\
+      It provides backtesting functionality using the powerfull library vectorbt.",
     tags: [
       {
-        name: "nextjs",
-        color: "blue-text-gradient",
+        name: "python",
+        color: "yellow-blue-text-gradient",
       },
       {
-        name: "supabase",
-        color: "green-text-gradient",
+        name: "pandas",
+        color: "orange-text-gradient",
       },
       {
-        name: "css",
-        color: "pink-text-gradient",
+        name: "numpy",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "ta-lib",
+        color: "text-[#84f10c]",
       },
     ],
     image: strBot,
@@ -446,19 +410,20 @@ const projects = [
   {
     name: "GravSolver",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Minimalistic desktop application that allows users to adjust a free-air anomaly gravity loop. Users provide a relevant data set\
+      containing the actual measurement and std for each examine point. It implements hypothesis testing using F-test and exports results as .csv and reports as .txt.",
     tags: [
       {
-        name: "nextjs",
-        color: "blue-text-gradient",
+        name: "python",
+        color: "yellow-blue-text-gradient",
       },
       {
-        name: "supabase",
-        color: "green-text-gradient",
+        name: "pandas",
+        color: "orange-text-gradient",
       },
       {
-        name: "css",
-        color: "pink-text-gradient",
+        name: "numpy",
+        color: "yellow-text-gradient",
       },
     ],
     image: gravSolver,
@@ -468,19 +433,24 @@ const projects = [
   {
     name: "Webhook Bot",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Desktop application which enables users to run a publically available server hosted on their PC, which listens for webhooks from TradingView.\
+    It processes incoming trading signals and place actual orders with stop loss & take profit to Bybit crypto exchange using APIs.",
     tags: [
       {
-        name: "nextjs",
-        color: "blue-text-gradient",
+        name: "python",
+        color: "yellow-blue-text-gradient",
       },
       {
-        name: "supabase",
-        color: "green-text-gradient",
+        name: "flask",
+        color: "text-[#bdcacb]",
       },
       {
-        name: "css",
-        color: "pink-text-gradient",
+        name: "ngrok",
+        color: "text-[#e4ebd2]",
+      },
+      {
+        name: "bybit-api",
+        color: "text-[#fca602]",
       },
     ],
     image: webhookBot,
@@ -490,92 +460,28 @@ const projects = [
   {
     name: "SatellitePosition",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A python script which determines the position (X, Y, Z) at WGS84 Coordinate Reference System of a given satellite for a specific timestamp \
+      based on Kepler's laws of planetary motion. Users can provide the relevant navigation message as .csv file and a desirable timestamp.",
     tags: [
       {
-        name: "nextjs",
-        color: "blue-text-gradient",
+        name: "python",
+        color: "yellow-blue-text-gradient",
       },
       {
-        name: "supabase",
-        color: "green-text-gradient",
+        name: "pandas",
+        color: "orange-text-gradient",
       },
       {
-        name: "css",
-        color: "pink-text-gradient",
+        name: "numpy",
+        color: "yellow-text-gradient",
       },
     ],
     image: satellitePosition,
     source_code_link: "https://github.com/lewisdoukas/satellitePosition",
     link_image: github,
   },
-  // {
-  //   name: "Moschato 15-minute city",
-  //   description:
-  //     "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-  //   tags: [
-  //     {
-  //       name: "nextjs",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "supabase",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "css",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: mosxato,
-  //   source_code_link:
-  //     "https://ntua-gis.maps.arcgis.com/apps/webappviewer/index.html?id=2ee2069518fc402b96dfd22628d6d677",
-  //   link_image: arcgis,
-  // },
-  // {
-  //   name: "Binance Leaderboard",
-  //   description:
-  //     "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-  //   tags: [
-  //     {
-  //       name: "nextjs",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "supabase",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "css",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: leaderboard,
-  //   source_code_link: "",
-  //   link_image: stop,
-  // },
-  // {
-  //   name: "Duke's Blackjack",
-  //   description:
-  //     "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-  //   tags: [
-  //     {
-  //       name: "nextjs",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "supabase",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "css",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: blackjack,
-  //   source_code_link: "https://github.com/lewisdoukas/DukeBlackJack",
-  //   link_image: github,
-  // },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const testimonials = [];
+
+export { services, technologies, experiences, projects, testimonials };

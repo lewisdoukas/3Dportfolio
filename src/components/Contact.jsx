@@ -6,10 +6,7 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
-
-// template_3bg1qdx
-// service_93fpl0l
-// NaJJsTk4IrWOaSAsT
+import { github, telegram, twitter } from "../assets";
 
 const Contact = () => {
   const formRef = useRef();
@@ -34,12 +31,6 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
-
-    console.log(
-      import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-      import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-      import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-    );
 
     emailjs
       .send(
@@ -84,6 +75,29 @@ const Contact = () => {
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
+        <span className="flex justify-start items-center">
+          <a
+            href="https://github.com/lewisdoukas"
+            target="_blank"
+            className="pointer"
+          >
+            <img src={github} alt="github" className="w-8 h-8" />
+          </a>
+          <a
+            href="https://t.me/lewisdoukas"
+            target="_blank"
+            className="pointer ms-5"
+          >
+            <img src={telegram} alt="telegram" className="w-8 h-8" />
+          </a>
+          <a
+            href="https://twitter.com/DoukasLewis"
+            target="_blank"
+            className="pointer ms-5"
+          >
+            <img src={twitter} alt="twitter" className="w-7 h-7" />
+          </a>
+        </span>
 
         <form
           ref={formRef}

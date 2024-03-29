@@ -15,7 +15,7 @@ const ProjectCard = ({
   link_image,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.75, 0.75)}>
+    <motion.div variants={fadeIn("up", "spring", index * 0.6, 0.75)}>
       <Tilt
         options={{
           max: 45,
@@ -77,9 +77,10 @@ const Works = () => {
         >
           Following projects showcases my skills and experience through
           real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos in it. It reflects my
-          ability to solve complex problems, work with different technologies,
-          and manage projects effectively.
+          links to code repositories or papers 📄. However, some projects are
+          not publically available 🚫. They reflect my ability to solve complex
+          problems, work with different technologies and manage projects
+          effectively.
         </motion.p>
       </div>
 
