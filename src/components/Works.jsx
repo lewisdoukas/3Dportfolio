@@ -55,7 +55,7 @@ const ProjectCard = ({
           <img
             src={image}
             alt="project_image"
-            className="w-full h-full object-cover rounded-2xl"
+            className="w-full h-full rounded-2xl"
           />
 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
@@ -115,12 +115,11 @@ const Works = () => {
           ref={refParagraph}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Following projects showcases my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to code repositories or papers 📄. However, some projects are
-          not publically available 🚫. They reflect my ability to solve complex
-          problems, work with different technologies and manage projects
-          effectively.
+          Following projects showcase my skills and experience through
+          real-world examples of my work. Each project is briefly described
+          while links to code repositories or papers are available. They reflect
+          my ability to solve complex problems, work with different technologies
+          and manage projects effectively.
         </p>
       </div>
 
