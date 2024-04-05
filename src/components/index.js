@@ -11,6 +11,7 @@ import Tech from "./Tech";
 import Experience from "./Experience";
 import Works from "./Works";
 import Feedbacks from "./Feedbacks";
+import Map from "./Map";
 import Contact from "./Contact";
 
 export {
@@ -21,6 +22,7 @@ export {
   Experience,
   Works,
   Feedbacks,
+  Map,
   Contact,
   EarthCanvas,
   BallCanvas,

@@ -54,6 +54,8 @@ import teleBot from "./projects/teleBot.jpg";
 import webhookBot from "./projects/webhookBot.jpg";
 import yaxul from "./projects/yaxul.jpg";
 
+import pointer from "./pointer.png";
+
 export {
   logo,
   backend,
@@ -106,4 +108,5 @@ export {
   check,
   telegram,
   twitter,
+  pointer,
 };

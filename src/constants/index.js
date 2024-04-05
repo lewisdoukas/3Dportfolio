@@ -383,7 +383,7 @@ const projects = [
     description:
       "Desktop application which allows users to connect with a crypto exchange using APIs and \
       automate trading procedures based on conditions implied by an underlying trading strategy.\
-      It provides backtesting functionality using the powerfull library vectorbt.",
+      It provides backtesting functionality using the powerful library vectorbt.",
     tags: [
       {
         name: "python",
@@ -410,7 +410,7 @@ const projects = [
   {
     name: "GravSolver",
     description:
-      "Minimalistic desktop application that allows users to adjust a free-air anomaly gravity loop. Users provide a relevant data set\
+      "Minimalistic desktop application that allows users to adjust a free-air gravity anomaly loop. Users provide a relevant data set\
       containing the actual measurement and std for each examine point. It implements hypothesis testing using F-test and exports results as .csv and reports as .txt.",
     tags: [
       {
@@ -433,7 +433,7 @@ const projects = [
   {
     name: "Webhook Bot",
     description:
-      "Desktop application which enables users to run a publically available server hosted on their PC, which listens for webhooks from TradingView.\
+      "Desktop application which enables users to run a publically available server hosted on their PC securely through ngrok tunneling, which listens for webhooks from TradingView.\
     It processes incoming trading signals and place actual orders with stop loss & take profit to Bybit crypto exchange using APIs.",
     tags: [
       {
