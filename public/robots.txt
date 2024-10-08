@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://lewisdoukas.com/sitemap.xml

@@ -33,6 +33,23 @@ const App = () => {
           <StarsCanvas />
         </div>
       </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          "@context": "https://schema.org/",
+          "@type": "Person",
+          name: "Lewis Doukas",
+          url: "https://lewisdoukas.com",
+          image:
+            "https://ik.imagekit.io/zy0tyktc2/portfolio/ilias.jpg?updatedAt=1728405670713",
+          sameAs: [
+            "https://x.com/DoukasLewis",
+            "https://github.com/lewisdoukas/",
+            "https://lewisdoukas.com",
+          ],
+        }}
+      ></script>
     </BrowserRouter>
   );
 };
