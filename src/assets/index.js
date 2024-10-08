@@ -12,6 +12,7 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 import telegram from "./telegram.png";
 import twitter from "./twitter.png";
+import internet from "./internet.png";
 
 import python from "./tech/python.png";
 import javascript from "./tech/javascript.png";
@@ -20,6 +21,7 @@ import pinescript from "./tech/pinescript.png";
 import html from "./tech/html.png";
 import css from "./tech/css.png";
 import svelte from "./tech/svelte.png";
+import nextjs from "./tech/nextjs.svg";
 import reactjs from "./tech/reactjs.png";
 import flask from "./tech/flask.png";
 import nodejs from "./tech/nodejs.png";
@@ -53,6 +55,7 @@ import strBot from "./projects/strBot.jpg";
 import teleBot from "./projects/teleBot.jpg";
 import webhookBot from "./projects/webhookBot.jpg";
 import yaxul from "./projects/yaxul.jpg";
+import paulidou from "./projects/paulidou.jpg";
 
 import pointer from "./pointer.png";
 
@@ -109,4 +112,7 @@ export {
   telegram,
   twitter,
   pointer,
+  nextjs,
+  paulidou,
+  internet,
 };

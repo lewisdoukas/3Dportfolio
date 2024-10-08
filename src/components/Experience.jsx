@@ -41,7 +41,17 @@ const ExperienceCard = ({ experience }) => (
           key={`experience-point-${index}`}
           className="text-white-100 text-[14px] pl-1 tracking-wider"
         >
-          {point}
+          {point !== "Check out my profile" ? (
+            point
+          ) : (
+            <a
+              className="hover:text-emerald-500"
+              href="https://www.fiverr.com/lewisdoukas"
+              target="_blank"
+            >
+              Check out my profile
+            </a>
+          )}
         </li>
       ))}
     </ul>

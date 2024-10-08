@@ -8,7 +8,7 @@ import {
   pinescript,
   html,
   css,
-  svelte,
+  nextjs,
   reactjs,
   flask,
   firebase,
@@ -29,11 +29,13 @@ import {
   satellitePosition,
   strBot,
   teleBot,
-  webhookBot,
   yaxul,
   github,
   report,
   stop,
+  paulidou,
+  internet,
+  fiverr,
 } from "../assets";
 
 export const navLinks = [
@@ -88,8 +90,8 @@ const technologies = [
     icon: css,
   },
   {
-    name: "Svelte",
-    icon: svelte,
+    name: "Nextjs",
+    icon: nextjs,
   },
   {
     name: "React JS",
@@ -182,9 +184,51 @@ const experiences = [
       "Studying to obtain an Integrated Master degree at School of Rural, Surveying and Geoinformatics Engineering.",
     ],
   },
+  {
+    title: "Freelancer Developer",
+    company_name: "Fiverr",
+    icon: fiverr,
+    iconBg: "#E6DEDD",
+    date: "Feb 2023 - Present",
+    points: [
+      "Developing applications related to finance, trading and crypto currencies.",
+      "Creating automations for trading using TradingView Webhooks, Telegram posts and other social platforms.",
+      "Automate trading using several strategies, indicators, technical analysis tools and APIs.",
+      "Creating web applications related to crypto currency trading & TradingView Webhooks routing to crypto exchanges using APIs.",
+      "Creating full stack web applications using Nextjs | React, implementing features such as Authentication, Database integration and Email notifications.",
+      "Completing over 150 orders, satisfying over 60 unique clients and having over 100 5⭐️ reviews.",
+      "Check out my profile",
+    ],
+  },
 ];
 
 const projects = [
+  {
+    name: "Lawyer business website",
+    description:
+      "Web application which allows potential clients to contact with the office, schedule online appointments and track the progress of their cases. It also serves as a CMS enabling business administrators to manage all the necessary information about their clients and cases.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "text-[#d2c4d3]",
+      },
+      {
+        name: "react",
+        color: "purple-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "text-[#38bdf8]",
+      },
+      {
+        name: "appwrite",
+        color: "text-[#a82a6f]",
+      },
+    ],
+    image: paulidou,
+    source_code_link: "https://paulidoulaw.com",
+    link_image: internet,
+  },
   {
     name: "BreadBytes - Yaxul.com",
     description:
@@ -430,33 +474,7 @@ const projects = [
     source_code_link: "https://github.com/lewisdoukas/gravity-loop-solver",
     link_image: github,
   },
-  {
-    name: "Webhook Bot",
-    description:
-      "Desktop application which enables users to run a publically available server hosted on their PC securely through ngrok tunneling, which listens for webhooks from TradingView.\
-    It processes incoming trading signals and place actual orders with stop loss & take profit to Bybit crypto exchange using APIs.",
-    tags: [
-      {
-        name: "python",
-        color: "yellow-blue-text-gradient",
-      },
-      {
-        name: "flask",
-        color: "text-[#bdcacb]",
-      },
-      {
-        name: "ngrok",
-        color: "text-[#e4ebd2]",
-      },
-      {
-        name: "bybit-api",
-        color: "text-[#fca602]",
-      },
-    ],
-    image: webhookBot,
-    source_code_link: "",
-    link_image: stop,
-  },
+
   {
     name: "SatellitePosition",
     description:
